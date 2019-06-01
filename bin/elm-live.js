@@ -15,17 +15,15 @@ program
   .option('-r, --no-recover [no-recover]', `Stop server when ${chalk.cyan.underline('elm make')} runs into an issue.`)
   .option('-u, --pushstate [pushstate]', `Forces the index.html file to always be served. Must be used when building with ${chalk.cyan.underline('Browser.application')}.`, false)
   .option('-s, --start-page [start-page]', 'Specify a custom HTML file.', 'index.html')
-  .option(
-    '-x, --proxyPrefix [prefix]',
-    'Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying'
-  )
-  .option(
-    '-y, --proxyHost [proxyhost]',
-    'Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying'
-  )
+  .option('-x, --proxyPrefix [prefix]', 'Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying')
+  .option('-y, --proxyHost [proxyhost]', 'Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying')
   .option('-S, --ssl [ssl]', `Start an https server instead of http.`, false)
   .option('-b, --before-build [before-build]', `Run EXECUTABLE before every rebuild. This way you can easily use other tools like ${chalk.cyan.underline('elm-css')} or ${chalk.cyan.underline('browserify')} in your workflow.`)
   .option('-a, --after-build [after-build]', `Just like ${chalk.cyan.underline('--before-build')}, but runs after ${chalk.cyan.underline('elm make')}.`)
+  .option('-n, --no-notify-browser [no-notify-browser]', `${chalk.red('(TODO, add better description) Stop sending notifications to the browsers on building and errors events')}`)
+  .option('-t, --no-hot-reloading [no-hot-reloading]', `${chalk.red('(TODO, add better description) Stop using the hot reloading feature. This feature swap the Elm code preserving the state of the app. It does not replay the messages of your app so it may lead to wrong state in case you change the init or the Model. In these case just reload the browser manually.')}`)
+  .option('-i, --ide [ide]', `${chalk.red('(TODO, add better description)  You favorite IDE to use for opening Elm files')}`, `atom`)
+  .option('-v, --verbose [verbose]', `${chalk.red('TODO, add description')}`, false)
   .on('--help', () => {
     console.log(`    Only ${chalk.magenta('<elm-main>')} is required. If you want to pass on specific options to ${chalk.cyan.underline('elm make')} make sure they are passed after the -- in the command.`)
     console.log()
