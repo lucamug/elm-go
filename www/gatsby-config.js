@@ -5,10 +5,10 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Live reloading server for Elm development',
-    titleTemplate: "%s | elm-live",
-    description: 'Documentation and more for elm-live, a dev server for elm development with live reloading.',
-    url: "https://www.elm-live.com",
-    image: "/images/elm-live.jpg",
+    titleTemplate: "%s | elm-go",
+    description: 'Documentation and more for elm-go, a dev server for elm development with live reloading.',
+    url: "https://www.elm-go.com",
+    image: "/images/elm-go.jpg",
     twitterUsername: "@wking__",
   },
   plugins: [
@@ -25,13 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'elm-live-docs',
-        short_name: 'elm-live',
+        name: 'elm-go-docs',
+        short_name: 'elm-go',
         start_url: '/',
         background_color: '#FFFFFF',
         theme_color: '#FFFFFF',
         display: 'minimal-ui',
-        icon: 'src/images/elm-live-icon.png' // This path is relative to the root of the site.
+        icon: 'src/images/elm-go-icon.png' // This path is relative to the root of the site.
       }
     },
     {

@@ -5,5 +5,5 @@
 /.nyc_output/
 /.vscode/
 /coverage/
-elm-live-*.tgz
+elm-go-*.tgz
 .DS_Store

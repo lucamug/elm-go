@@ -1,6 +1,13 @@
-<img alt="elm-live" src="./elm-live-logo.png" width="100%" height="auto" />
+### This is a fork of https://github.com/wking-io/elm-live
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24d05688-7775-4ce8-86fa-c071d7ae909a/deploy-status)](https://app.netlify.com/sites/elm-live/deploys)
+It is 100% compatible with it. These are the main differences:
+
+* Small bug fixes
+* Add logs to the terminal so it is clear to check which assets are missing
+* QR code on start to test on mobile devices (not working in all terminals)
+* Highlight the successful builds with emoji and color so it is immediate to check when a build starts compiling again
+
+### Original README
 
 # elm-live | A flexible dev server for Elm. Live reload included.
 
@@ -107,6 +114,9 @@ Proxy requests to another server running at `HOST`. Requires `--proxy-prefix` an
 
 #### `-d, --dir=PATH`
 The base for static content. Default: `.`.
+
+#### `-w, --watch`
+Comma separated list of additional directories to be watched.
 
 #### `-s, --start-page=PATH`
 A custom html file to serve other than the default `index.html`.
