@@ -1,6 +1,7 @@
-<img alt="elm-live" src="./elm-live-logo.png" width="100%" height="auto" />
+# This is a fork of https://github.com/wking-io/elm-live
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24d05688-7775-4ce8-86fa-c071d7ae909a/deploy-status)](https://app.netlify.com/sites/elm-live/deploys)
+Original README
+
 
 # elm-live | A flexible dev server for Elm. Live reload included.
 
