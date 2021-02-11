@@ -1,6 +1,6 @@
 {
   "name": "elm-go",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "A flexible dev server for Elm. Live reload included!",
   "bin": {
     "elm-go": "bin/elm-go.js"
