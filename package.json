@@ -1,6 +1,6 @@
 {
   "name": "elm-go",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "A flexible dev server for Elm. Live reload included!",
   "bin": {
     "elm-go": "bin/elm-go.js"
@@ -54,10 +54,10 @@
     "tool",
     "elm"
   ],
-  "author": "William King <contact@wking.dev>",
+  "author": "Luca Mugnaini <lucamug@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:wking-io/elm-go"
+    "url": "git@github.com:lucamug/elm-go"
   },
   "devDependencies": {
     "eslint": "7.3.1",
