@@ -1,7 +1,12 @@
 ### This is a fork of https://github.com/wking-io/elm-live
 
-Original README
+Differences:
 
+* Small bug fixes
+* Add log in terminal
+* QR code on start to test on mobile devices
+
+### Original README
 
 # elm-live | A flexible dev server for Elm. Live reload included.
 
