@@ -1,10 +1,11 @@
 ### This is a fork of https://github.com/wking-io/elm-live
 
-Differences:
+It is 100% compatible with it. These are the main differences:
 
 * Small bug fixes
-* Add log in terminal
-* QR code on start to test on mobile devices
+* Add logs to the terminal so it is clear to check which assets are missing
+* QR code on start to test on mobile devices (not working in all terminals)
+* Highlight the successful builds with emoji and color so it is immediate to check when a build starts compiling again
 
 ### Original README
 
